@@ -320,7 +320,7 @@ p {
   }
 
   .feature-item {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -483,4 +483,81 @@ h3 {
 .phase-list {
   list-style: none;
   padding: 0;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  flex: 1 1 300px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.emoji {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 300px;
+}
+
+.bibi-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .bibi-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .card {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .bibi-image {
+    max-width: 250px;
+  }
 }
